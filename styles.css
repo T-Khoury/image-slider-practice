@@ -91,13 +91,3 @@ img {
     background-color: lightskyblue;
 }
 
-@media (max-width: 600px) {
-    img {
-        width: 400px;
-    }
-    .picture-frame-container {
-        width: 400px;
-        height: 300px;
-    }
-    
-}
