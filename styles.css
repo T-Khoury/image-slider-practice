@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    width: 600px;
+    height: auto;
+}
+
+.pictures {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    right: 0px;
+    transition: right 0.2s;
+}
+
+.picture-frame-container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+    display: grid;
+}
+
+.slide {
+    width: 100%;
+}
+
+/* .pic1 {
+    left: 0px;
+}
+
+.pic2 {
+    left: 600px;
+}
+
+.pic3 {
+    left: 1200px;
+}
+
+.pic4 {
+    left: 1800px;
+}
+
+.pic5 {
+    left: 2400px;
+} */
+
+.button-container {
+    position: absolute;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.arrow img {
+    width: 2rem;
+    height: auto;
+}
+
+.dot-container {
+    position: absolute;
+    display: flex;
+    align-self: end;
+    justify-self: center;
+    column-gap: 1rem;
+    bottom: 1rem;
+    
+}
+
+.dot {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border-style: solid;
+    background-color: azure;
+}
+
+.active {
+    background-color: lightskyblue;
+}
