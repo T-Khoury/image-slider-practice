@@ -16,8 +16,8 @@ const imageSlider = {
 
     scrollRight: function() {
         let pix = imageSlider.getRightPx();
-        if (pix !== 2400) {
-            pix += 600;
+        if (pix !== 1600) {
+            pix += 400;
             imageSlider.setRightPx(pix);
         } else {
             pix = 0;
@@ -29,10 +29,10 @@ const imageSlider = {
     scrollLeft: function() {
         let pix = imageSlider.getRightPx();
         if (pix !== 0) {
-            pix -= 600;
+            pix -= 400;
             imageSlider.setRightPx(pix);
         } else {
-            pix = 2400
+            pix = 1600;
             imageSlider.setRightPx(pix);
         };
         imageSlider.toggleActiveDot(pix);
@@ -84,16 +84,16 @@ const imageSlider = {
                         pix = 0;
                         break;
                     case '1':
-                        pix = 600;
+                        pix = 400;
                         break;
                     case '2':
-                        pix = 1200;
+                        pix = 800;
                         break;
                     case '3':
-                        pix = 1800;
+                        pix = 1200;
                         break;
                     case '4':
-                        pix = 2400;
+                        pix = 1600;
                         break;
                 };
                 imageSlider.setRightPx(pix);
@@ -119,16 +119,16 @@ const imageSlider = {
             case 0:
                 dots[0].classList.add('active');
                 break;
-            case 600:
+            case 400:
                 dots[1].classList.add('active');
                 break;
-            case 1200:
+            case 800:
                 dots[2].classList.add('active');
                 break;
-            case 1800:
+            case 1200:
                 dots[3].classList.add('active');
                 break;
-            case 2400:
+            case 1600:
                 dots[4].classList.add('active');
                 break;
         };
